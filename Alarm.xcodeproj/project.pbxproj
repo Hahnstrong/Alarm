@@ -13,6 +13,7 @@
 		6332C5551F268FB800935DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6332C5531F268FB800935DCF /* LaunchScreen.storyboard */; };
 		6332C5601F26931F00935DCF /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332C55F1F26931F00935DCF /* AlarmListTableViewController.swift */; };
 		6332C5621F26946E00935DCF /* AlarmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332C5611F26946E00935DCF /* AlarmDetailViewController.swift */; };
+		6332C5641F269A9C00935DCF /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332C5631F269A9C00935DCF /* SwitchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6332C5561F268FB800935DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6332C55F1F26931F00935DCF /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
 		6332C5611F26946E00935DCF /* AlarmDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailViewController.swift; sourceTree = "<group>"; };
+		6332C5631F269A9C00935DCF /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				6332C54E1F268FB800935DCF /* Main.storyboard */,
+				6332C5631F269A9C00935DCF /* SwitchTableViewCell.swift */,
 				6332C5611F26946E00935DCF /* AlarmDetailViewController.swift */,
 			);
 			name = UI;
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6332C54B1F268FB800935DCF /* AppDelegate.swift in Sources */,
+				6332C5641F269A9C00935DCF /* SwitchTableViewCell.swift in Sources */,
 				6332C5601F26931F00935DCF /* AlarmListTableViewController.swift in Sources */,
 				6332C5621F26946E00935DCF /* AlarmDetailViewController.swift in Sources */,
 			);

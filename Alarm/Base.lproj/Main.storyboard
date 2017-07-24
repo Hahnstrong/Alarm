@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +25,35 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mx9-bU-pfc" id="twc-VX-wfH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzF-5N-DUu">
+                                            <rect key="frame" x="318" y="6" width="51" height="31"/>
+                                        </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDI-hK-5iM">
+                                            <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWz-4D-GS1">
+                                            <rect key="frame" x="58" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AWz-4D-GS1" firstAttribute="centerY" secondItem="twc-VX-wfH" secondAttribute="centerY" id="8Xc-JG-OL7"/>
+                                        <constraint firstItem="AWz-4D-GS1" firstAttribute="leading" secondItem="vDI-hK-5iM" secondAttribute="trailing" constant="8" id="LQG-8u-h1L"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="vDI-hK-5iM" secondAttribute="leading" id="da2-9J-eEu"/>
+                                        <constraint firstItem="hzF-5N-DUu" firstAttribute="centerY" secondItem="twc-VX-wfH" secondAttribute="centerY" id="fBP-A7-0aR"/>
+                                        <constraint firstItem="vDI-hK-5iM" firstAttribute="centerY" secondItem="twc-VX-wfH" secondAttribute="centerY" id="qrq-Vq-jPC"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hzF-5N-DUu" secondAttribute="trailing" id="tFv-HW-tpI"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="NtM-1c-CkS" kind="show" id="RFj-VR-Xk8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -79,4 +108,7 @@
             <point key="canvasLocation" x="-850" y="99"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="SxO-Rg-vFJ"/>
+    </inferredMetricsTieBreakers>
 </document>
